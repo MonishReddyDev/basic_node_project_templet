@@ -24,33 +24,15 @@ Lets take a look inside the `src` folder
 
 `Project setup`
 
-- Inside the `src/config` folder there is a conif.json and write the following code
-
+- Inside the `/src` folder execute follwong cmd
 ```
-{
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
-
+npx sequelize init
 ```
+By executing this you will see the config.json file in src/config.json
 
 - If you are setting up your development env write the username and pass of your db and in dilact mention you db you want to use same for Prod and test
+
+Run the server
+
+npm run dev
+
